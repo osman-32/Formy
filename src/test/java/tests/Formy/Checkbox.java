@@ -29,7 +29,7 @@ public class Checkbox {
         clickOnTheDesiredLink1("Checkbox");
 
         Assert.assertEquals(Driver.get().getCurrentUrl().contains("checkbox"),true);
-
+         //Driver method commenting out
         Driver.get().close();
 
 
