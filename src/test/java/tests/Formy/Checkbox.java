@@ -25,7 +25,7 @@ public class Checkbox {
 
         FormyHomePage formyHomePage = new FormyHomePage();
         Driver.get().get(formyHomePage.url);
-
+         // this reusable method
         clickOnTheDesiredLink1("Checkbox");
 
         Assert.assertEquals(Driver.get().getCurrentUrl().contains("checkbox"),true);
