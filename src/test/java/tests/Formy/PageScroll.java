@@ -1,5 +1,6 @@
 package tests.Formy;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FormyHomePage;
 import utils.Driver;
@@ -14,6 +15,8 @@ public class PageScroll {
         Driver.get().get(formyHomePage.url);
 
         clickOnTheDesiredLink1("Page Scroll");
+
+        Assert.assertEquals(Driver.get().getCurrentUrl(),"http://formy-project.herokuapp.com/scroll");
 
         Driver.get().close();
     }
