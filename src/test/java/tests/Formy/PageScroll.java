@@ -15,7 +15,7 @@ public class PageScroll {
         Driver.get().get(formyHomePage.url);
 
         clickOnTheDesiredLink1("Page Scroll");
-
+        // This is assertion line
         Assert.assertEquals(Driver.get().getCurrentUrl(),"http://formy-project.herokuapp.com/scroll");
 
         Driver.get().close();
